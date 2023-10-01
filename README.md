@@ -18,9 +18,6 @@
 <a href="https://huggingface.co/spaces/Logspace/Langflow"><img src="https://huggingface.co/datasets/huggingface/badges/raw/main/open-in-hf-spaces-sm.svg" alt="HuggingFace Spaces"></a>
 </p>
 
-<a href="https://github.com/logspace-ai/langflow">
-    <img width="100%" src="https://github.com/logspace-ai/langflow/blob/main/img/langflow-demo.gif?raw=true"></a>
-
 <p>
 </p>
 
@@ -78,10 +75,6 @@ or
 ```shell
 langflow # or langflow --help
 ```
-
-### HuggingFace Spaces
-
-You can also check it out on [HuggingFace Spaces](https://huggingface.co/spaces/Logspace/Langflow) and run it in your browser! You can even clone it and have your own copy of Langflow to play with.
 
 # 🖥️ Command Line Interface (CLI)
 
@@ -159,19 +152,6 @@ flow = load_flow_from_json("path/to/flow.json")
 # Now you can use it like any chain
 flow("Hey, have you heard of Langflow?")
 ```
-
-# 👋 Contributing
-
-We welcome contributions from developers of all levels to our open-source project on GitHub. If you'd like to contribute, please check our [contributing guidelines](./CONTRIBUTING.md) and help make Langflow more accessible.
-
----
-
-Join our [Discord](https://discord.com/invite/EqksyE2EX9) server to ask questions, make suggestions and showcase your projects! 🦾
-
-<p>
-</p>
-
-[![Star History Chart](https://api.star-history.com/svg?repos=logspace-ai/langflow&type=Timeline)](https://star-history.com/#logspace-ai/langflow&Date)
 
 # 📄 License
 
