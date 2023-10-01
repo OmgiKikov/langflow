@@ -31,13 +31,9 @@ export default function FlowPage(): JSX.Element {
           flows.findIndex((flow) => flow.id === tabId) !== -1 && (
             <Page flow={flows.find((flow) => flow.id === tabId)!} />
           )}
-        <a
-          target={"_blank"}
-          href="https://logspace.ai/"
-          className="logspace-page-icon"
-        >
-          {version && <div className="mt-1">⛓️ Langflow v{version}</div>}
-          <div className={version ? "mt-2" : "mt-1"}>Created by Logspace</div>
+        <a target={"_blank"} href="" className="">
+          {version && <div className="mt-1">⛓️ LLMBuilder v{version}</div>}
+          <div className={version ? "mt-2" : "mt-1"}>Created by Kikov</div>
         </a>
       </div>
     </>

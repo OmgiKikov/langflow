@@ -27,6 +27,7 @@ export default function LoginAdminPage() {
   }: inputHandlerEventType): void {
     setInputState((prev) => ({ ...prev, [name]: value }));
   }
+  c;
 
   function signIn() {
     const user: LoginType = {

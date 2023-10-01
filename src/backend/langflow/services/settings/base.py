@@ -50,7 +50,7 @@ class Settings(BaseSettings):
 
     LANGFUSE_SECRET_KEY: Optional[str] = None
     LANGFUSE_PUBLIC_KEY: Optional[str] = None
-    LANGFUSE_HOST: Optional[str] = None
+    LANGFUSE_HOST: Optional[str] = "https://cloud.langfuse.com/project/cln6sz3uc0001l608722vzd54"
 
     @validator("CONFIG_DIR", pre=True, allow_reuse=True)
     def set_langflow_dir(cls, value):
@@ -58,8 +58,8 @@ class Settings(BaseSettings):
             import appdirs
 
             # Define the app name and author
-            app_name = "langflow"
-            app_author = "logspace"
+            app_name = "LLM builder"
+            app_author = "John Kikov"
 
             # Get the cache directory for the application
             cache_dir = appdirs.user_cache_dir(app_name, app_author)

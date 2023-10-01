@@ -1,7 +1,7 @@
 services:
   # A Docker web service
   - type: web
-    name: langflow
+    name: test1
     runtime: docker
     dockerfilePath: ./Dockerfile
     repo: https://github.com/logspace-ai/langflow

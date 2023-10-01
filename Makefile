@@ -87,6 +87,10 @@ build:
 	poetry build --format sdist
 	rm -rf src/backend/langflow/frontend
 
+gorrila:
+
+	streamlit run app.py
+
 dev:
 	make install_frontend
 ifeq ($(build),1)

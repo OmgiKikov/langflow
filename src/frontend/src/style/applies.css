@@ -192,13 +192,13 @@
   .flow-page-positioning {
     @apply h-full w-full overflow-hidden;
   }
-  .logspace-page-icon {
+  /* .logspace-page-icon {
     @apply absolute bottom-2 left-7 flex h-6 cursor-pointer flex-col items-center justify-start overflow-hidden rounded-lg bg-foreground px-2 text-center font-sans text-xs tracking-wide text-secondary transition-all duration-500 ease-in-out;
-  }
+  } */
 
-  .logspace-page-icon:hover {
+  /* .logspace-page-icon:hover {
     @apply hover:h-12;
-  }
+  } */
 
   .flex-max-width {
     @apply flex w-full;

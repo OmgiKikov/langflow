@@ -240,9 +240,9 @@ def get_free_port(port):
 
 
 def print_banner(host, port):
-    # console = Console()
+    console = Console()
 
-    word = "Langflow"
+    word = "Test"
     colors = ["#3300cc"]
 
     styled_word = ""
@@ -253,17 +253,14 @@ def print_banner(host, port):
 
     # Title with emojis and gradient text
     title = (
-        f"[bold]Welcome to :chains: {styled_word} [/bold]\n\n"
+        f"[bold]Welcom :chains: {styled_word} [/bold]\n\n"
         f"Access [link=http://{host}:{port}]http://{host}:{port}[/link]"
     )
-    info_text = (
-        "Collaborate, and contribute at our "
-        "[bold][link=https://github.com/logspace-ai/langflow]GitHub Repo[/link][/bold] :rocket:"
-    )
+    info_text = "Ебашь братан "
 
     # Create a panel with the title and the info text, and a border around it
     panel = Panel(
-        f"{title}\n{info_text}", box=box.ROUNDED, border_style="blue", expand=False
+        f"{title}\n{info_text}", box=box.ROUNDED, border_style="green", expand=False
     )
 
     # Print the banner with a separator line before and after
@@ -272,7 +269,7 @@ def print_banner(host, port):
 
 def run_langflow(host, port, log_level, options, app):
     """
-    Run Langflow server on localhost
+    Run Test1 server on localhost
     """
     try:
         if platform.system() in ["Windows"]:

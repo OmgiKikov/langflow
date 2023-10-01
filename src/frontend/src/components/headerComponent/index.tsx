@@ -67,18 +67,18 @@ export default function Header(): JSX.Element {
       </div>
       <div className="header-end-division">
         <div className="header-end-display">
-          <a
-            href="https://github.com/logspace-ai/langflow"
+          {/* <a
+            href=""
             target="_blank"
             rel="noreferrer"
             className="header-github-link"
-          >
-            <FaGithub className="mr-2 h-5 w-5" />
+          > */}
+            {/* <FaGithub className="mr-2 h-5 w-5" />
             Star
             <div className="header-github-display">{stars}</div>
-          </a>
-          <a
-            href="https://twitter.com/logspace_ai"
+          </a> */}
+          {/* <a
+            href=""
             target="_blank"
             rel="noreferrer"
             className="text-muted-foreground"
@@ -86,13 +86,13 @@ export default function Header(): JSX.Element {
             <FaTwitter className="side-bar-button-size" />
           </a>
           <a
-            href="https://discord.gg/EqksyE2EX9"
+            href=""
             target="_blank"
             rel="noreferrer"
             className="text-muted-foreground"
           >
             <FaDiscord className="side-bar-button-size" />
-          </a>
+          </a> */}
 
           <Separator orientation="vertical" />
           <button

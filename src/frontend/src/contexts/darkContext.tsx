@@ -5,8 +5,6 @@ import { darkContextType } from "../types/typesContext";
 const initialValue = {
   dark: {},
   setDark: () => {},
-  stars: 0,
-  setStars: (stars) => 0,
   gradientIndex: 0,
   setGradientIndex: () => 0,
 };
@@ -21,17 +19,6 @@ export function DarkProvider({ children }) {
   const [gradientIndex, setGradientIndex] = useState<number>(0);
 
   useEffect(() => {
-    async function fetchStars() {
-      const starsCount = await getRepoStars("logspace-ai", "langflow");
-      setStars(starsCount);
-    }
-    fetchStars();
-    const min = 0;
-    const max = 30;
-    setGradientIndex(Math.floor(Math.random() * (max - min + 1)) + min);
-  }, []);
-
-  useEffect(() => {
     if (dark) {
       document.getElementById("body")!.classList.add("dark");
     } else {
@@ -43,8 +30,6 @@ export function DarkProvider({ children }) {
   return (
     <darkContext.Provider
       value={{
-        setStars,
-        stars,
         dark,
         setDark,
         setGradientIndex,
